@@ -1,0 +1,10 @@
+{
+  "prompt_tokens": 100,
+  "expected_output_tokens": 32,
+  "difficulty": 0.2,
+  "queue_pressure": 0.1,
+  "cache_pressure": 0.1,
+  "quality_floor": 0.9,
+  "risk_class": "low",
+  "deadline_ms": 1000
+}

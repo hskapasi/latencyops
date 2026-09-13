@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "latencyops"
+version = "0.1.2"
+description = "Latency measurement and quality-aware inference planning toolkit"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "Apache-2.0"
+keywords = ["llm", "llmops", "inference-latency", "model-routing", "vllm", "litellm", "multi-agent"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.scripts]
+latencyops = "latencyops.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/hskapasi/latencyops"
+Repository = "https://github.com/hskapasi/latencyops"
+Issues = "https://github.com/hskapasi/latencyops/issues"
+Security = "https://github.com/hskapasi/latencyops/blob/main/SECURITY.md"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

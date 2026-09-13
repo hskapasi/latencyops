@@ -1,0 +1,7 @@
+# HELP nv_trt_llm_request_metrics TRT-LLM request metrics
+# TYPE nv_trt_llm_request_metrics gauge
+nv_trt_llm_request_metrics{model="synthetic",request_type="waiting"} 3
+# HELP nv_trt_llm_kv_cache_block_metrics TRT-LLM KV cache blocks
+# TYPE nv_trt_llm_kv_cache_block_metrics gauge
+nv_trt_llm_kv_cache_block_metrics{model="synthetic",kv_cache_block_type="fraction"} 0.6
+nv_trt_llm_kv_cache_block_metrics{model="synthetic",kv_cache_block_type="used"} 60

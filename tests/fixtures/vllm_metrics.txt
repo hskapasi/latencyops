@@ -1,0 +1,6 @@
+# HELP vllm:num_requests_waiting Number of waiting requests
+# TYPE vllm:num_requests_waiting gauge
+vllm:num_requests_waiting{model_name="synthetic"} 8
+# HELP vllm:kv_cache_usage_perc KV cache usage
+# TYPE vllm:kv_cache_usage_perc gauge
+vllm:kv_cache_usage_perc{model_name="synthetic"} 0.5

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="430" viewBox="0 0 960 430" role="img" aria-labelledby="title desc">
+  <title id="title">LatencyOps planning CLI demo</title>
+  <desc id="desc">A terminal showing latencyops plan selecting a small model tier, FP16 precision, full context, speculation, and early exit for a low-risk request.</desc>
+  <rect width="960" height="430" rx="12" fill="#111827"/>
+  <rect width="960" height="44" rx="12" fill="#1f2937"/>
+  <circle cx="24" cy="22" r="6" fill="#ef4444"/>
+  <circle cx="46" cy="22" r="6" fill="#f59e0b"/>
+  <circle cx="68" cy="22" r="6" fill="#22c55e"/>
+  <text x="92" y="28" fill="#d1d5db" font-family="Segoe UI, Arial, sans-serif" font-size="15">LatencyOps planner</text>
+  <g font-family="Consolas, Menlo, monospace" font-size="18">
+    <text x="30" y="82" fill="#93c5fd">$ latencyops plan --request examples/request.json</text>
+    <text x="30" y="126" fill="#e5e7eb">{</text>
+    <text x="54" y="158" fill="#c4b5fd">&quot;model_tier&quot;</text><text x="230" y="158" fill="#e5e7eb">: </text><text x="250" y="158" fill="#86efac">&quot;small&quot;</text><text x="350" y="158" fill="#e5e7eb">,</text>
+    <text x="54" y="190" fill="#c4b5fd">&quot;precision&quot;</text><text x="230" y="190" fill="#e5e7eb">: </text><text x="250" y="190" fill="#86efac">&quot;fp16&quot;</text><text x="335" y="190" fill="#e5e7eb">,</text>
+    <text x="54" y="222" fill="#c4b5fd">&quot;context_policy&quot;</text><text x="290" y="222" fill="#e5e7eb">: </text><text x="310" y="222" fill="#86efac">&quot;full&quot;</text><text x="385" y="222" fill="#e5e7eb">,</text>
+    <text x="54" y="254" fill="#c4b5fd">&quot;speculative_tokens&quot;</text><text x="350" y="254" fill="#e5e7eb">: </text><text x="370" y="254" fill="#fbbf24">6</text><text x="385" y="254" fill="#e5e7eb">,</text>
+    <text x="54" y="286" fill="#c4b5fd">&quot;early_exit&quot;</text><text x="230" y="286" fill="#e5e7eb">: </text><text x="250" y="286" fill="#fbbf24">true</text><text x="300" y="286" fill="#e5e7eb">,</text>
+    <text x="54" y="318" fill="#c4b5fd">&quot;rationale&quot;</text><text x="230" y="318" fill="#e5e7eb">: [</text>
+    <text x="78" y="350" fill="#86efac">&quot;lower model tier for low difficulty or queue pressure&quot;,</text>
+    <text x="78" y="378" fill="#86efac">&quot;use speculative decoding for sufficiently long output&quot;,</text>
+    <text x="78" y="406" fill="#86efac">&quot;allow early exit for easy low-risk requests&quot;</text><text x="650" y="406" fill="#e5e7eb">]</text>
+  </g>
+</svg>

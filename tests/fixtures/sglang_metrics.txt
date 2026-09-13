@@ -1,0 +1,9 @@
+# HELP sglang:num_queue_reqs Waiting requests
+# TYPE sglang:num_queue_reqs gauge
+sglang:num_queue_reqs{model_name="synthetic"} 4
+# HELP sglang:token_usage Token usage
+# TYPE sglang:token_usage gauge
+sglang:token_usage{model_name="synthetic"} 0.75
+# HELP sglang:cache_hit_rate Cache hit rate
+# TYPE sglang:cache_hit_rate gauge
+sglang:cache_hit_rate{model_name="synthetic"} 0.4

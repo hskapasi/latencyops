@@ -1,0 +1,8 @@
+.env
+.env.*
+.git
+__pycache__
+*.pyc
+REAL_*.json
+tests
+examples
